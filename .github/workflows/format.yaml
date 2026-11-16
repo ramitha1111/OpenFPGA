@@ -25,8 +25,9 @@ jobs:
   change_detect:
     name: "Check"
     runs-on: ubuntu-22.04
+    timeout-minutes: 10
     strategy:
-      fail-fast: false
+      fail-fast: true
       matrix:
         config:
           - name: "C/C++"
